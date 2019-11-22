@@ -31,4 +31,4 @@ You will see that browser will show cat.jpg in the browser which is the backend 
 
 https://d123.cloudfront.net/test/1/2/3/cat.jpg
 
-You can use this process for any complex URLs in case of dynamic content with query strings. For example, www.example.com/sweater/browncoat?this=test;object=new can be represented with a simpler URL and on the client side, which would help you improve your SEO. 
+You can use this process for any complex URLs in case of dynamic content with query strings. For example, www.example.com/sweater/browncoat?this=test&object=new can be represented with a simpler URL and on the client side, which would help you improve your SEO. 
