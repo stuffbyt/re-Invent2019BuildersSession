@@ -67,5 +67,10 @@ Resources:
           S3OriginConfig:
             OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
         PriceClass: 'PriceClass_All'
-
-  # Create an IAM user with Access Keys to enable automated deployment of the website to this bucket
+ Outputs:
+  DistributionId:
+    Description: 'CloudFront Distribution ID'
+    Value: !Ref CloudFrontDistribution
+  Domain:
+    Description: 'Cloudfront Domain'
+    Value: !GetAtt CloudFrontDistribution.DomainName
