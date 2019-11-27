@@ -20,8 +20,13 @@ o	Note: You can find your CloudFront distribution ID from the CloudFront console
 -	Acknowledge the message and click on Deploy.
 -	Once the function is deployed, give it a couple of minutes and then test the HTTP Response Headers (using CURL or Web Browser Developer tools) to make sure we’re receiving the correct response headers. 
 
+Uploading a file to your S3 bucket
+
+You can download a sample HTML file from here and upload it to your S3 bucket (root directory): 
+https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/Headers.html
+
 Using Curl, I generally use the following command. 
 
-curl -v https://d123.cloudfront.net/filename >/dev/null 
+curl -v https://yourcloudfrontID.cloudfront.net/Headers.html >/dev/null 
 
-For web browser developer too, you can go to developer tools and check the Networking tab. Inspect the HTTP response headers to see verify if you’re getting the headers. 
+For web browser developer tool, you can go to developer tools and check the Networking tab. Inspect the HTTP response headers to see verify if you’re getting the headers.
