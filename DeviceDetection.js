@@ -19,8 +19,7 @@ exports.handler = (event, context, callback) => {
 
     const desktopPath = '/desktop';
     const mobilePath = '/mobile';
-    const tabletPath = '/tablet';
-    const smarttvPath = '/smarttv';
+   
 
     if (headers['cloudfront-is-desktop-viewer']
         && headers['cloudfront-is-desktop-viewer'][0].value === 'true') {
@@ -28,13 +27,7 @@ exports.handler = (event, context, callback) => {
     } else if (headers['cloudfront-is-mobile-viewer']
                && headers['cloudfront-is-mobile-viewer'][0].value === 'true') {
         request.uri = mobilePath + request.uri;
-    } else if (headers['cloudfront-is-tablet-viewer']
-               && headers['cloudfront-is-tablet-viewer'][0].value === 'true') {
-        request.uri = tabletPath + request.uri;
-    } else if (headers['cloudfront-is-smarttv-viewer']
-               && headers['cloudfront-is-smarttv-viewer'][0].value === 'true') {
-        request.uri = smarttvPath + request.uri;
-    }
+    } 
     console.log(`Request uri set to "${request.uri}"`);
 
     callback(null, request);
