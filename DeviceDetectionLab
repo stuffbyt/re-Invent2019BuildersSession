@@ -38,7 +38,10 @@ Deploying your code to CloudFront edge locations
 -	Acknowledge the message and click on Deploy.
 -	Once the function is deployed, give it a couple of minutes and then test the HTTP Response Headers using CURL utility. 
 
-•	 curl -v d123yourcfurl.cloudfront.net/CloudFrontMap.png -H "User-Agent: CloudFront-Is-Mobile-Viewer" >/dev/null
-•	curl -v d123yourcfurl.cloudfront.net/CloudFrontMap.png -H "User-Agent: CloudFront-Is-Desktop-Viewer" >/dev/null
+• Passing Mobile device user-agent to mimic a mobile device from our machine:
+curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png -H "User-Agent: Mozilla/5.0 (Android 7.0; Mobile; rv:54.0) Gecko/54.0 Firefox/54.0" >/dev/null
+
+•	For desktop view, perform the following curl
+curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png >/dev/null
 
 Notice in the HTTP response headers, you would get different sized image based on the User-Agent you manually pass in your Curl. Verify the Content-length header in your HTTP response headers. You would see a smaller object for Mobilr viewer.
