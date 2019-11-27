@@ -24,8 +24,6 @@ Update your CloudFront Distribution
 -	Scroll down to Cache Based on Selected Request Headers and select, Whitelist
 o	CloudFront-Is-Desktop-Viewer
 o	CloudFront-Is-Mobile-Viewer
-o	CloudFront-Is-SmartTV-Viewer
-o	CloudFront-Is-Tablet-Viewer
 -	Scroll down and select: Yes, Edit.
 
 Deploying your code to CloudFront edge locations
