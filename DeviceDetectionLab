@@ -34,7 +34,7 @@ Deploying your code to CloudFront edge locations
 -	Click on Deploy to Lambda@Edge 
 -	In the Distribution field, select your CloudFront distribution ID
 -	In the Cache Behavior, select * (That’s the default cache behavior)
--	In the CloudFront event, we will select Origin Request. The reason for this event is that we want to send the HSTS headers in our responses to the client 
+-	In the CloudFront event, we will select Origin Request. We want to send reqeusts to different folders in the backend depending on the user-agent header. 
 -	Acknowledge the message and click on Deploy.
 -	Once the function is deployed, give it a couple of minutes and then test the HTTP Response Headers using CURL utility. 
 
