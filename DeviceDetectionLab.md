@@ -1,4 +1,6 @@
-Setting up the Backend
+## Serving custom content to end users based on the device type
+
+**Setting up the Backend**
 
 -	In this case, we are using an S3 bucket as our origin. We’re going to create two folders (prefixes) inside the root of the bucket, “mobile” and “desktop”.
 -	Download CloudFront Map images to your local machine from: 
@@ -10,7 +12,7 @@ Setting up the Backend
 -	Note that CloudFrontSmaller.png is a compressed image for mobile websites. 
 -	What’s awesome about this solution is that you can keep the same front end facing URL for two different images.
 
-Creating a Lambda Function
+**Creating a Lambda Function**
 
 -	Login to your AWS Lambda console in in us-east-1 region
 -	Click on Crate Function and then select Author from Scratch
@@ -19,7 +21,7 @@ Creating a Lambda Function
 -	Now that your function is created, go ahead and copy the code from and paste it in the editor https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetection.js
 -	Once the code has been successfully copied, go ahead and save your code. To save your code version, click on “Save” button on the top rightmost screen.
 
-Update your CloudFront Distribution 
+**Update your CloudFront Distribution**
 
 -	Go to your Amazon CloudFront distribution, and click on Behaviors tab on the top.
 -	Select Default Cache Behavior (*)
@@ -28,7 +30,7 @@ o	CloudFront-Is-Desktop-Viewer
 o	CloudFront-Is-Mobile-Viewer
 -	Scroll down and select: Yes, Edit.
 
-Deploying your code to CloudFront edge locations
+**Deploying your code to CloudFront edge locations**
 
 -	If you scroll up from the code editor, you should see Designer filed where you would see an option to add a trigger. Click on that, and select CloudFront from the dropdown. 
 -	Click on Deploy to Lambda@Edge 
@@ -38,10 +40,10 @@ Deploying your code to CloudFront edge locations
 -	Acknowledge the message and click on Deploy.
 -	Once the function is deployed, give it a couple of minutes and then test the HTTP Response Headers using CURL utility. 
 
-• Passing Mobile device user-agent to mimic a mobile device from our machine:
+• *Passing Mobile device user-agent to mimic a mobile device from our machine*:
 curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png -H "User-Agent: Mozilla/5.0 (Android 7.0; Mobile; rv:54.0) Gecko/54.0 Firefox/54.0" >/dev/null
 
-•	For desktop view, perform the following curl
+•	*For desktop view, perform the following curl*
 curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png >/dev/null
 
 Notice in the HTTP response headers, you would get different sized image based on the User-Agent you manually pass in your Curl. Verify the Content-length header in your HTTP response headers. You would see a smaller object for Mobilr viewer.
