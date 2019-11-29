@@ -1,6 +1,6 @@
 ## Serving custom content to end users based on the device type
 
-**Setting up the Backend**
+**Prepare our backend (S3 origin) for this lab**
 
 -	In this case, we are using an S3 bucket as our origin. We’re going to create two folders (prefixes) inside the root of the bucket, “mobile” and “desktop”.
 -	Download CloudFront Map images to your local machine from: 
@@ -12,13 +12,13 @@
 -	Note that CloudFrontSmaller.png is a compressed image for mobile websites. 
 -	What’s awesome about this solution is that you can keep the same front end facing URL for two different images.
 
-**Creating a Lambda Function**
+**Create a Lambda Function**
 
 -	Login to your AWS Lambda console in in us-east-1 region
 -	Click on Crate Function and then select Author from Scratch
 -	Give your function a name and select runtime nodejs 10.x 
 -	For Permissions, select, Use an existing role. Choose the role that you created in previous exercise 
--	Now that your function is created, go ahead and copy the code from and paste it in the editor https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetection.js
+-	Now that your function is created, go ahead and copy the code from and paste it in the editor [https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetection.js]
 -	Once the code has been successfully copied, go ahead and save your code. To save your code version, click on “Save” button on the top rightmost screen.
 
 **Update your CloudFront Distribution**
@@ -30,7 +30,7 @@ o	CloudFront-Is-Desktop-Viewer
 o	CloudFront-Is-Mobile-Viewer
 -	Scroll down and select: Yes, Edit.
 
-**Deploying your code to CloudFront edge locations**
+**Deploy your Lambda code to CloudFront edge locations**
 
 -	If you scroll up from the code editor, you should see Designer filed where you would see an option to add a trigger. Click on that, and select CloudFront from the dropdown. 
 -	Click on Deploy to Lambda@Edge 
