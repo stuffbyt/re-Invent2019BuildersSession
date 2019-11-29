@@ -1,6 +1,8 @@
-NET301-R L- Adding HSTS headers using Lambda@Edge for Origin Response 
+NET301-R L- 
 
-Creating a Lambda Function
+##Adding HSTS headers using Lambda@Edge for Origin Response 
+
+*Creating a Lambda Function*
 
 -	Login to your AWS Lambda console in in us-east-1 region
 -	Click on Crate Function and then select Author from Scratch
@@ -9,7 +11,7 @@ Creating a Lambda Function
 -	Now that your function is created, go ahead and copy the code from and paste it in the editor https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/HSTSHeaders.js
 -	Once the code has been successfully copied, go ahead and save your code. To save your code version, click on “Save” button on the top rightmost screen. 
 
-Deploying your code to CloudFront edge locations
+*Deploying your code to CloudFront edge locations
 
 -	If you scroll up from the code editor, you should see Designer filed where you would see an option to add a trigger. Click on that, and select CloudFront from the dropdown. 
 -	Click on Deploy to Lambda@Edge 
@@ -20,13 +22,13 @@ o	Note: You can find your CloudFront distribution ID from the CloudFront console
 -	Acknowledge the message and click on Deploy.
 -	Once the function is deployed, give it a couple of minutes and then test the HTTP Response Headers (using CURL or Web Browser Developer tools) to make sure we’re receiving the correct response headers. 
 
-Uploading a file to your S3 bucket
+*Uploading a file to your S3 bucket
 
 You can download a sample HTML file from here and upload it to your S3 bucket (root directory): 
 https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/Headers.html
 
 Using Curl, I generally use the following command. 
 
-curl -v https://yourcloudfrontID.cloudfront.net/Headers.html >/dev/null 
+_ _ curl -v https://yourcloudfrontID.cloudfront.net/Headers.html >/dev/null _ _
 
 For web browser developer tool, you can go to developer tools and check the Networking tab. Inspect the HTTP response headers to see verify if you’re getting the headers.
