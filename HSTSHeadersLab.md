@@ -1,5 +1,3 @@
-NET301-R L- 
-
 ## Adding HSTS headers using Lambda@Edge for Origin Response 
 
 **Creating a Lambda Function**
