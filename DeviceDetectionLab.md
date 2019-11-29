@@ -18,7 +18,7 @@
 -	Click on Crate Function and then select Author from Scratch
 -	Give your function a name and select runtime nodejs 10.x 
 -	For Permissions, select, Use an existing role. Choose the role that you created in previous exercise 
--	Now that your function is created, go ahead and copy the code from and paste it in the editor [https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetection.js]
+-	Now that your function is created, go ahead and copy the code from and paste it in the editor: https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetection.js
 -	Once the code has been successfully copied, go ahead and save your code. To save your code version, click on “Save” button on the top rightmost screen.
 
 **Update your CloudFront Distribution**
