@@ -6,7 +6,7 @@ At this point we should have our resources created using the above mentioned AWS
 
 
 
-## Install the curl utility as we will be using it throughoput the session.
+## Install the curl utility as we will be using it throughout the session.
 
 https://curl.haxx.se/download.html
 
