@@ -22,8 +22,17 @@ o	Note: You can find your CloudFront distribution ID from the CloudFront console
 
 **Uploading a file to your S3 bucket**
 
-You can download a sample HTML file from here and upload it to your S3 bucket (root directory): 
+- You can download a sample HTML file from here and upload it to your S3 bucket (root directory): 
 https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/Headers.html
+- To upload a file to your s3 bucket, do the following.
+  - Go to your AWS Console, and select S3
+  - You should see your newly created S3 bucket by sorting the buckets in your account with clicking on "Date Created"
+  - Click on Upload and browse through your Reinvent GitHub repository (downloaded on your local machine in earlier step)
+  - Click on Upload. 
+
+**Time to test our solution**
+
+- You can find your CloudFront distribution's default domain name in the CloudFormation's outputs. 
 
 Using Curl, I generally use the following command. 
 
