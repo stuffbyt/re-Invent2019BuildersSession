@@ -5,7 +5,7 @@
 -	In this case, we are using an S3 bucket as our origin. We’re going to create two folders (prefixes) inside the root of the bucket, “mobile” and “desktop”.
 -	Download CloudFront Map images to your local machine from: 
   https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/CloudFrontMapSmaller.png
-  https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/CloudFrontMap.png
+  and https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/CloudFrontMap.png
 -	Upload CloudFrontMapSmaller.png into your mobile folder and CloudFrontMap.png to your desktop folder. 
 -	Now, navigate inside your S3 bucket’s mobile folder and rename the image CloudFrontMapSmaller.png to CloudFrontMap.png so that both images have the same name. 
 -	Now, using Lambda@Edge, we’re going to serve custom images to desktop users and mobile users based on the User-Agent header. 
