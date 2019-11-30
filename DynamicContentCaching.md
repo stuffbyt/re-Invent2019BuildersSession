@@ -1,6 +1,6 @@
 ## Dynamic Content Indexing and Caching Strategy 
 
-If you’re using dynamic pages to serve custom content, then your URL would contain query strings to serve the dynamic content to your users. For example, your URL would have ?&id=. You can set up your CloudFront distribution in the following way so that it caches the dynamic content (different sweater types) and lets the search engine index different products:
+If you’re using dynamic pages to serve custom content, then your URL would contain query strings to serve the dynamic content to your users. For example, your URL might have "?id=" to serve custom content based on the user logged in. You can set up your CloudFront distribution in the following way so that it caches the dynamic content (different sweater types) and lets the search engine index different products:
 
 -	The default content will be loaded from the default cache behavior (no query strings/parameters added for better search ability 
 -	Create a separate cache behavior for /winterwear/*
