@@ -2,7 +2,7 @@
 
 **Creating a Lambda Function**
 
--	Login to your AWS Lambda console in in us-east-1 region
+-	Login to your AWS Console and in the search bar, look for Lambda: https://console.aws.amazon.com/console/home?region=us-east-1
 -	Click on Crate Function and then select Author from Scratch
 -	Give your function a name and select runtime nodejs 10.x 
 -	For Permissions, select, Create a new role from AWS policy templates. Give your role a name and select, Basic Lambda@Edge Permissions 
