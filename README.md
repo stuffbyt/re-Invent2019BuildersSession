@@ -7,20 +7,20 @@ Please go through the following labs in the given order
 
 **1. Including HSTS headers in your response** 
 
-*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/HSTSHeadersLab* 
+*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/HSTSHeadersLab.md* 
 
 **2. Serving custome content based on the device type**
 
-*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetectionLab*
+*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DeviceDetectionLab.md*
 
 **3. Simplifying user facning URLs for better SEO results**
 
-*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/EasytoComplexLab*
+*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/EasytoComplexLab.md*
 
 **4. Caching strategies for dynamic content indexing**
 
-*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DynamicContentCaching*
+*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/DynamicContentCaching.md*
 
 **5. Extra credits: Further fine-tuning your Amazon CloudFront distribution for SEO**
 
-*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/FineTuneCF*
+*https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/FineTuneCF.md*
