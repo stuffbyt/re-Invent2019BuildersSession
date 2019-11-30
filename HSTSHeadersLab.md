@@ -11,7 +11,7 @@
 
 **Deploying your code to CloudFront edge locations**
 
--	If you scroll up from the code editor, you should see Designer filed where you would see an option to add a trigger. Click on that, and select CloudFront from the dropdown. 
+-	If you scroll up from the code editor, you should see Designer field where you would see an option to add a trigger. Click on that, and select your CloudFront distribution from the dropdown. You can go to your CloudFormation stack's Outputs  to verify the CloudFront distribution ID.
 -	Click on Deploy to Lambda@Edge 
 -	In the Distribution field, select your CloudFront distribution ID.
 o	Note: You can find your CloudFront distribution ID from the CloudFront console. The distribution we deployed using the CloudFormation stack earlier. 
