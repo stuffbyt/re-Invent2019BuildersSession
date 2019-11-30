@@ -3,7 +3,7 @@
 **Prepare your backend (AWS S3) for this lab**
 
 -	Create the following folders/file in your s3 bucket to mimic a complex directory on a traditional webserver: /test/1/2/3/cat.jpg 
--	You can install cat.jpg from https://github.com/stuffbyt/re-Invent2019BuildersSession
+-	You can find the cat.jpg image here: https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/cat.jpg
 -	Upload the cat.jpg inside test/1/2/3/ folder. 
 
 
