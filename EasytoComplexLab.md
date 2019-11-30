@@ -7,7 +7,6 @@
 -	The cat.jpg is in the re-Invent2019BuildersSession repository you installed earlier. Alternatively, you can find the cat.jpg image here: https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/cat.jpg
 -	Upload the cat.jpg inside test/1/2/3/ folder. 
 
-
 **Create a Lambda Function**
 
 -	Login to your AWS Lambda console in in us-east-1 region
@@ -19,9 +18,9 @@
 
 **Update your CloudFront distribution**
 
-- Navigate to Behaviors tab, and in Path Pattern field, enter winterwear/*
+- Navigate to Behaviors tab for your CloudFront distribution.
+- Select Create Behavior, and in Path Pattern field, enter winterwear/*
 - Keep everything else default. Scroll down and select, Yes, Edit
-
 
 **Deploy a Lambda your code to CloudFront edge locations**
 
@@ -29,11 +28,13 @@
 - Click on that, and select CloudFront from the dropdown. Select newly created Cache Behavior from the dropdown.
 - Deploy to Lambda@Edge for Origin Request
 -	In the Distribution field, select your CloudFront distribution ID
--	In the Cache Behavior, select * (That’s the default cache behavior)
+-	In the Cache Behavior, select winterwear/* (That’s the cache behavior we just created in the above step)
 -	In the CloudFront event, we will select Origin Request. We want to map a user facing URLs to a complex URL in the backend.   
 -	Acknowledge the message and click on Deploy.
 
-Now to test this, let’s make a request to your CloudFront distribution with the following URL in your browser:
+**Time to test our solution**
+
+- Let’s make a request to your CloudFront distribution with the following URL in your browser:
 
 *https://d123.cloudfront.net/winterwear/brownsweater*
 
