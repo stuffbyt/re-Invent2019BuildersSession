@@ -2,8 +2,9 @@
 
 The following labs will touch upon how Amazon CloudFront and Lambda@Edge can help to improve your website's SEO ranking. The backend (Origin) for these exercises is Amazon S3, but for your own use case, you can use any other custom origin of your choice. 
 
-Please go through the following labs in the given order
+At this point we should have our resources created using the above mentioned AWS CloudFormation template.
 
+Please go through the following labs in the given order
 
 **1. Including HSTS headers in your response** 
 
