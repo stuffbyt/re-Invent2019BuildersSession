@@ -4,12 +4,15 @@ The following labs will touch upon how Amazon CloudFront and Lambda@Edge can hel
 
 At this point we should have our resources created using the above mentioned AWS CloudFormation template.
 
+
+
 ## Install the curl utility as we will be using it throughoput the session.
 
 *https://curl.haxx.se/download.html
 
-Please go through the following labs in the given order
 
+
+## Labs
 
 **1. Including HSTS headers in your response** 
 
