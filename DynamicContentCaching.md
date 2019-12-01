@@ -2,7 +2,7 @@
 
 If you’re using dynamic pages to serve custom content, then your URL would contain query strings to serve the dynamic content to your users. For example, your URL might have "?id=" to serve custom content based on the user logged in. You can set up your CloudFront distribution in the following way so that it caches the dynamic content (different sweater types) and lets the search engine index different products:
 
--	The default content will be loaded from the default cache behavior (no query strings/parameters added for better search ability 
+-	The default content will be loaded from the default cache behavior (no query strings/parameters added for better search ability)
 -	Navigate to *winterwear/* cache behavior, and click on Edit 
 -	Inside the cache behavior, scroll down to "Query String Forwarding and Caching"
 - Select "Forward all, cache based on whitelist", and eneter "sweater" in the field 
