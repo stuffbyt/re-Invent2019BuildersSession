@@ -33,3 +33,11 @@ https://curl.haxx.se/download.html
 **5. Extra credits: Further fine-tuning your Amazon CloudFront distribution for SEO**
 
 *https://github.com/stuffbyt/re-Invent2019BuildersSession/blob/master/FineTuneCF.md*
+
+## Deploying resources using CloudFormation
+
+- Login to your AWS Console: https://console.aws.amazon.com/console/home?region=us-east-1
+- Search for CloudFormation service. Once in, click on Create stack (right side of the screen, and choose With new resources (standard)
+- Upload a template file, navigate to the repository file you downloaded earlier, and select ReInventTirth.yaml
+- Select a name for your stack, and hit "Next" for subsequent steps untill the stack starts creating servcices
+- Once the stack is created, you should navigate to Outputs tabs to find out the CloudFront distribution ID and domnain name, which you will be using throughout the lab. 
