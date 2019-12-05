@@ -43,8 +43,8 @@ For web browser developer tool, you can go to developer tools and check the Netw
 
 In your curl output, look for the following in the HTTP response headers. If you see these headers, it means that you have implemented HSTS enforcement for your website. 
 
-< strict-transport-security: max-age=63072000; includeSubdomains; preload
-< content-security-policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'
-< x-content-type-options: nosniff
-< x-frame-options: DENY
-< x-xss-protection: 1; mode=block
+- strict-transport-security: max-age=63072000; includeSubdomains; preload
+- content-security-policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'
+- x-content-type-options: nosniff
+- x-frame-options: DENY
+- x-xss-protection: 1; mode=block
