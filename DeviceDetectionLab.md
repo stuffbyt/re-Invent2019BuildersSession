@@ -33,7 +33,7 @@ o	CloudFront-Is-Mobile-Viewer
 **Deploy your Lambda code to CloudFront edge locations**
 
 -	If you scroll up from the code editor, you should see Designer field where you would see an option to add a trigger. 
--	Click on Deploy to Lambda@Edge and select Amazon CloudFront as a trigger. In this step, you would have to add select your CloudFront distribution ID that you can find in the CloudFormation stack's output tab. 
+-	Click on Deploy to Lambda@Edge and select Amazon CloudFront as a trigger. In this step, you would have to select your CloudFront distribution ID that you can find in the CloudFormation stack's output tab. 
 -	In the Cache Behavior, select * (That’s the default cache behavior)
 -	In the CloudFront event, we will select Origin Request. We want to send reqeusts to different folders in the backend depending on the user-agent header. 
 -	Acknowledge the message and click on Deploy.
