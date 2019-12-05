@@ -47,4 +47,17 @@ curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png -H "User-Agent: M
 •	*For desktop view, perform the following curl*
 curl -v https://dvd8yendmgqle.cloudfront.net/CloudFrontMap.png >/dev/null
 
-Notice in the HTTP response headers, you would get different sized image based on the User-Agent you manually pass in your Curl. Verify the Content-length header in your HTTP response headers. You would see a smaller object for Mobilr viewer.
+
+**How do we know the solution we just built works?**
+
+Examine HTTP response headers for the curl commands you just issued.
+
+In the curl command you issued for mobile devices, you should see the following Content-Length header:
+
+*content-length: 52004* ~52KB
+
+In the curl command for desktop i.e. the one without the explict User-Agent, you should see the following Content-Length header:
+
+*Content-Length: 162637* ~162KB
+
+What all this means is that for the same URL, you're getting served different images (smaller and regular sized) based on the User-Agent in the request. 
