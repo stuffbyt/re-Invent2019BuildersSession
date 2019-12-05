@@ -39,7 +39,7 @@ Using Curl, I generally use the following command.
 
 For web browser developer tool, you can go to developer tools and check the Networking tab. Inspect the HTTP response headers to see verify if you’re getting the headers.
 
-**How do we know the solution we just built works?
+**How do we know the solution we just built works?**
 
 In your curl output, look for the following in the HTTP response headers. If you see these headers, it means that you have implemented HSTS enforcement for your website. 
 
